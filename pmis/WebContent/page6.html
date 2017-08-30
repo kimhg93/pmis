@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 공통영역 s -->
+    <div class="menubar">
+        <div class="logo"><a href="main.html">MAIN</a></div>
+        <ul>
+            <li><a href="#">데이터 전송</a>
+                <ul class="sub_left">
+                    <li><a href="page1.html">실시간 데이터</a></li>
+                    <li><a href="page2.html">데이터 재전송</a></li>
+                    <li><a href="page3.html">HL7 뷰어</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="current">환경설정</a>
+                <ul class="sub_right">
+                    <li><a href="page4.html">장치설정</a></li>
+                    <li><a href="page5.html">환자연동 설정</a></li>
+                    <li><a href="page6.html">ERM 연동 설정</a></li>
+                    <li><a href="page7.html">백업 설정</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="ctgry">
+        <p> 환경설정 > EMR/전송항목 설정 </p>
+    </div>
+    <!-- 공통영역 e -->
+    <table class="insert_tbl">
+        <tr>
+            <td colspan="4">1. EMR 연동</td>
+        </tr>
+        <tr>
+            <td align="center">EMR 웹서비스 주소</td>
+            <td colspan="3">
+                <input type="text" style="max-width:500px;">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">EMR DB 정보</td>
+            <td colspan="3">
+                아이디&emsp;<input type="text">&emsp;패스워드&emsp;<input type="text">
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td colspan="4">2. 전송항목</td>
+        </tr>
+        <tr>
+            <td align="center">연결방식</td>
+            <td colspan="3">
+                <select style="width:60%">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+            </td>
+            <tr>
+                <td align="center" width="15%">아이피 주소</td>
+                <td width="35%"><input type="text"></td>
+                <td width="15%" align="center">포트번호</td>
+                <td width="35%"><input type="text"></td>
+            </tr>
+            <tr>
+                <td align="center">자동 연결 끊기</td>
+                <td colspan="3"><input type="text"> (분)</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td colspan="4">3. 연동정보</td>
+            </tr>
+            <tr>
+                <td align="center">연동방식</td>
+                <td colspan="3">
+                    <select style="width:30%">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">연동대상 환자</td>
+                <td colspan="3"><input type="text"></td>
+            </tr>
+            <tr>
+                <td align="center">환자 갱신 주기</td>
+                <td colspan="3"><input type="text"> (분)</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="border:0;text-align:center"><input type="button" class="tbl_btn" value="추가"></td>
+            </tr>
+    </table>
+</body>
+
+</html>

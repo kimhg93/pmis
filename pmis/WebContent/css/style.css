@@ -1,0 +1,379 @@
+ @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+ html,
+ body {
+     font-family: 'Nanum Gothic';
+     margin: 0;
+     height: 100%;
+     padding: 0;
+     border: 0;
+     font-size: 15px;
+ }
+ 
+ .menubar {
+     border: 0;
+     border: 0;
+     border: 0px;
+     margin: 0px;
+     padding: 0px;
+     font-size: 14px;
+     font-weight: bold;
+     width: 100%;
+ }
+ 
+ .menubar ul {
+     background: rgb(109, 109, 109);
+     height: 60px;
+     width: calc(100% - 150px);
+     width: -webkit-calc(100% - 150px);
+     width: -moz-calc(100% - 150px);
+     position: absolute;
+     list-style: none;
+     display: inline-block;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+ }
+ 
+ .menubar li {
+     padding: 0px;
+     float: left;
+     width: 50%;
+     font-size: 17px;
+ }
+ 
+ .menubar li a {
+     background: rgb(109, 109, 109);
+     color: #efefef;
+     display: inline-block;
+     font-weight: normal;
+     line-height: 60px;
+     margin: 0px;
+     width: 100%;
+     text-align: center;
+     text-decoration: none;
+ }
+ 
+ .menubar li a:hover,
+ .menubar ul li:hover a {
+     background: rgb(71, 71, 71);
+     color: #FFFFFF;
+     text-decoration: none;
+     transition: 0.3s;
+ }
+ 
+ .menubar li ul {
+     background: rgba(109, 109, 109, 0.9);
+     display: none;
+     /* 평상시에는 드랍메뉴가 안보이게 하기 */
+     height: auto;
+     padding: 0px;
+     margin: 0px;
+     border: 0px;
+     position: absolute;
+     width: 50%;
+     z-index: 200;
+     /*top:1em;
+        /*left:0;*/
+ }
+ 
+ .menubar li:hover ul {
+     display: block;
+     /*마우스 커서 올리면 드랍메뉴 보이게 하기       */
+ }
+ 
+ .menubar li li {
+     float: left;
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ .sub_left li {
+     width: 33.333%
+ }
+ 
+ .sub_right li {
+     width: 25%
+ }
+ 
+ .menubar li:hover li a {
+     background: none;
+ }
+ 
+ .menubar li ul a {
+     display: block;
+     height: 60px;
+     font-size: 15px;
+     font-style: normal;
+     margin: 0px;
+     text-align: center;
+ }
+ 
+ .menubar li ul a:hover,
+ .menubar li ul li:hover a {
+     background: rgb(71, 71, 71);
+     border: 0px;
+     color: #ffffff;
+     text-decoration: none;
+     transition: 0.3s;
+ }
+ 
+ .menubar p {
+     clear: left;
+ }
+ 
+ @media screen and (max-width:640px) {
+     .menubar li li {
+         width: 100%;
+     }
+ }
+ /* 메인 */ 
+ .logo {
+     display: inline-block;
+     height: 60px;
+     width: 150px;
+     background-color: #fff;
+     top: 0;
+     margin: 0 0 -4px;
+     text-align: center;
+     padding: 4px 0 0
+ }
+ 
+ .logo a {
+     text-decoration: none;
+     color: #000;
+     font-size: 40px;
+     margin: auto 0
+ }
+ 
+ .left_box,
+ .right_box {
+     margin:0 .5% 0;
+     width: 49%;
+     height: 42%;
+     display: inline-table;
+     border: 0;
+     text-align: center
+ }
+ 
+ .left_box {
+     position: relative;
+     left: 0
+ }
+ 
+ .right_box {
+     position: absolute;
+     right: 0
+ }
+ 
+ .ctgry,
+ .wide_box {
+     margin: 0;
+     width: 100%;
+     position: relative
+ }
+ 
+ .wide_box {
+     height: 42%;
+     display: inline-table;
+     border: 0;
+     text-align: center;
+ }
+ 
+ .box_tlt p,
+ .ctgry p {
+     display: inline-block
+ }
+ 
+ .ctgry {
+     background: #7ebca4;
+     height: 40px;
+     margin-bottom:1%;
+ }
+ 
+ .box_tlt {
+     width: 99%;
+     height: 40px;
+     font-size: 16px;
+     text-align: center;
+     color: #fff;
+     font-weight: 600;
+     border-radius: .2rem;
+     margin: 0 auto;
+     box-shadow: 0 0 3px gray
+ }
+ 
+ .left_box .box_tlt,
+ .right_box .box_tlt,
+ .wide_box .box_tlt {
+     background-color: #6683b9
+ }
+ 
+ .box_tlt p {
+     line-height: 40px;
+     margin: 0;
+     padding: 0;
+     width: 100px
+ }
+ 
+ .box_tlt input[type=button] {
+     margin: 5px 10px;
+     width: 100px;
+     display: inline-block;
+     position: absolute;
+     right: 0
+ }
+ 
+ .box_tbl_cover {
+     overflow: auto;
+     height: calc(90% - 30px);
+     width: 95%;
+     margin: 5px auto
+ }
+ 
+ .box_tbl_cover table {
+     width: 100%;
+     box-shadow: 0 0 5px gray
+ }
+ 
+ .box_tbl_cover table td {
+     height: 40px;
+     border-bottom: 1px solid #8e8e8e
+ }
+ 
+ .tbl_btn {
+     height: 30px;
+     border: 0;
+     background-color: #66b993;
+     color: #fff;
+     padding: 0 15px;
+     cursor: pointer;
+     border-radius: .3rem;
+     font-weight: 500;
+     font-size: 15px
+ }
+ 
+ .td_gray {
+     background-color: #7e7e7e;
+     color: #fff
+ }
+ 
+ .ctgry p {
+     font-size: 18px;
+     margin: 10px 0 0 30px;
+     color: #fff;
+     font-weight: 600
+ }
+
+/* page 2 */ 
+
+.select_cover {
+    width: 50%;
+    height: 35px;
+    background-color: #939393;
+    margin: 1% 0.5%;
+    padding: 15px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.select_cover select {
+    margin: auto 10px;
+    width: 180px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.select_cover span {
+    vertical-align: middle;
+}
+.select_cover input[type=button]{
+    vertical-align:middle;
+    margin:2px 0 0 30px;
+    width:100px;
+}
+.left_tbl{            
+    width:35%;
+    display:inline-block;
+    margin:0;
+    vertical-align:top;
+}
+.center_tbl{            
+    width:30%;
+    display:inline-block;
+    margin:0;
+    vertical-align:top;
+}
+.right_tbl{            
+    width:35%;
+    display:inline-block;
+    margin:0;
+    vertical-align:top;
+}
+/* page 3 ~ 7*/
+.insert_tbl{
+    width:80%;
+    margin:20px auto;
+}   
+.insert_tbl tr{
+    height:35px;
+}
+.insert_tbl td{
+    border-bottom:1px solid #d7d7d7;
+}
+.insert_tbl select{
+    height:35px;
+    margin:0;
+    vertical-align: middle;
+}
+.insert_tbl input{
+    vertical-align: middle;
+}
+.insert_tbl input[type=text]{
+    height:30px;
+    margin:0;
+    width:60%;
+    max-width: 200px;
+}
+.insert_tbl textarea{
+    width:100%;
+    min-height: 150px;
+}
+.insert_tbl div{
+    background-color:#cbcbcb;
+    padding:5px 40px;
+}
+/* popup */ 
+.popup_tbl{
+    width:100%;
+}
+.popup_tbl tr{
+    height:35px;
+}
+.popup_tbl td{
+}
+.popup_tbl input{
+    vertical-align: middle
+}
+.popup_tbl input[type=text]{
+    height:25px;
+    vertical-align: middle;
+}
+.popup_tbl select{
+    height:30px;
+    vertical-align: middle;
+}
+
+.popup_tlt{
+    text-align:center;
+    padding:10px;
+    background-color:#e2e2e2;
+}
+.popup_inner_tbl{
+    width:100%
+}
+.popup_inner_tbl tr{
+    height:35px;
+}
+.popup_inner_tbl td{
+    border-bottom: 1px solid #e5e5e5
+}

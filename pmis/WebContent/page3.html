@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 공통영역 s -->
+    <div class="menubar">
+        <div class="logo"><a href="main.html">MAIN</a></div>
+        <ul>
+            <li><a href="#">데이터 전송</a>
+                <ul class="sub_left">
+                    <li><a href="page1.html">실시간 데이터</a></li>
+                    <li><a href="page2.html">데이터 재전송</a></li>
+                    <li><a href="page3.html">HL7 뷰어</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="current">환경설정</a>
+                <ul class="sub_right">
+                    <li><a href="page4.html">장치설정</a></li>
+                    <li><a href="page5.html">환자연동 설정</a></li>
+                    <li><a href="page6.html">ERM 연동 설정</a></li>
+                    <li><a href="page7.html">백업 설정</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="ctgry">
+        <p> 데이터 전송 > HL7 뷰어 </p>
+    </div>
+    <!-- 공통영역 e -->
+    <table class="insert_tbl" align="center">
+        <tr>
+            <td align="center">CENTRAL MONITOR</td>
+            <td colspan="3">
+                <select style="width:30%">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">날짜</td>
+            <td colspan="3">
+                <select style="width:30%">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                </select>
+
+                <select style="width:15%;">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">폴더</td>
+            <td colspan="3"><input type="text"></td>
+        </tr>
+        <tr>
+            <td align="center">파일</td>
+            <td colspan="3">
+                <input type="file">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" width="15%">HL7 병동</td>
+            <td width="35%">
+                <select style="width:70%;">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                </select>
+                <input type="button" value="검색" class="tbl_btn">
+            </td>
+            <td align="center" width="15%">HL7 병동</td>
+            <td width="35%">
+                <select style="width:70%;">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4"><textarea></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div>
+                    <p>전체파일 갯수 : </p>
+                    <p>분석성공파일 갯수 : </p>
+                    <p>분석실패파일 갯수 : </p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">
+                <input type="button" value="분석실패한 파일 리스트 보기" class="tbl_btn">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

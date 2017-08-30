@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 공통영역 s -->
+    <div class="menubar">
+        <div class="logo"><a href="main.html">MAIN</a></div>
+        <ul>
+            <li><a href="#">데이터 전송</a>
+                <ul class="sub_left">
+                    <li><a href="page1.html">실시간 데이터</a></li>
+                    <li><a href="page2.html">데이터 재전송</a></li>
+                    <li><a href="page3.html">HL7 뷰어</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="current">환경설정</a>
+                <ul class="sub_right">
+                    <li><a href="page4.html">장치설정</a></li>
+                    <li><a href="page5.html">환자연동 설정</a></li>
+                    <li><a href="page6.html">ERM 연동 설정</a></li>
+                    <li><a href="page7.html">백업 설정</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="ctgry">
+        <p> 데이터 전송 > 실시간 데이터 </p>
+    </div>
+    <!-- 공통영역 e -->
+    <div class="select_cover">
+        <select style="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <span>부터</span>
+        <select>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <span>까지</span>
+        <input type="button" class="tbl_btn" value="조회">
+    </div>
+    <div class="wide_box" style="height:300px">
+        <div class="box_tlt" style="">
+            <p>조회결과</p>
+        </div>
+        <br>
+        <div style="" class="left_tbl">
+            <div class="box_tbl_cover" style="max-height:450px;">
+                <table cellspacing="0">
+                    <tr>
+                        <td width="10%" class="td_gray">NO</td>
+                        <td width="20%" class="td_gray">환자등록번호</td>
+                        <td width="15%" class="td_gray">환자명</td>
+                        <td width="35%" class="td_gray">병동-병실-병상</td>
+                        <td width="20%" class="td_gray">기록지</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1234</td>
+                        <td>홍길동</td>
+                        <td>소아-일반-102</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1234</td>
+                        <td>홍길동</td>
+                        <td>소아-일반-102</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1234</td>
+                        <td>홍길동</td>
+                        <td>소아-일반-102</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1234</td>
+                        <td>홍길동</td>
+                        <td>소아-일반-102</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1234</td>
+                        <td>홍길동</td>
+                        <td>소아-일반-102</td>
+                        <td>123</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="center_tbl">
+            <div class="box_tbl_cover" style="max-height:450px;">
+                <table cellspacing="0">
+                    <tr>
+                        <td width="40%" class="td_gray">전송일자</td>
+                        <td width="20%" class="td_gray">전송여부</td>
+                        <td width="40%" class="td_gray">병동-병실-병상</td>
+                    </tr>
+                    <tr>
+                        <td>2017-10-10</td>
+                        <td>전송</td>
+                        <td>소아-일반-102</td>
+                    </tr>
+                    <tr>
+                        <td>2017-10-10</td>
+                        <td>전송</td>
+                        <td>소아-일반-102</td>
+                    </tr>
+                    <tr>
+                        <td>2017-10-10</td>
+                        <td>전송</td>
+                        <td>소아-일반-102</td>
+                    </tr>
+                    <tr>
+                        <td>2017-10-10</td>
+                        <td>전송</td>
+                        <td>소아-일반-102</td>
+                    </tr>
+                    <tr>
+                        <td>2017-10-10</td>
+                        <td>전송</td>
+                        <td>소아-일반-102</td>
+                    </tr>
+                    <tr>
+                        <td>2017-10-10</td>
+                        <td>전송</td>
+                        <td>소아-일반-102</td>
+                    </tr>
+                    <tr>
+                        <td>2017-10-10</td>
+                        <td>전송</td>
+                        <td>소아-일반-102</td>
+                    </tr>
+                    <tr>
+                        <td>2017-10-10</td>
+                        <td>전송</td>
+                        <td>소아-일반-102</td>
+                    </tr>
+                </table>
+            </div>
+            <input type="button" value="실패 재전송" class="tbl_btn">
+            <input type="button" value="선택 재전송" class="tbl_btn">
+        </div>
+
+        <div class="right_tbl">
+            <div class="box_tbl_cover" style="max-height:450px;">
+                <table cellspacing="0">
+                    <tr>
+                        <td width="15%" class="td_gray">항목</td>
+                        <td width="15%" class="td_gray">코드</td>
+                        <td width="15%" class="td_gray">값(수치)</td>
+                        <td width="35%" class="td_gray">재전송일자</td>
+                        <td width="20%" class="td_gray">재전송</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>330</td>
+                        <td>111</td>
+                        <td>2017-10-10 11:11:13</td>
+                        <td>성공</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>330</td>
+                        <td>111</td>
+                        <td>2017-10-10 11:11:13</td>
+                        <td>성공</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>330</td>
+                        <td>111</td>
+                        <td>2017-10-10 11:11:13</td>
+                        <td>성공</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>330</td>
+                        <td>111</td>
+                        <td>2017-10-10 11:11:13</td>
+                        <td>성공</td>
+                    </tr>
+                    <tr>
+                        <td>123</td>
+                        <td>330</td>
+                        <td>111</td>
+                        <td>2017-10-10 11:11:13</td>
+                        <td>성공</td>
+                    </tr>
+                </table>
+            </div>
+            <input type="button" value="모두 재전송" class="tbl_btn">
+            <input type="button" value="선택 재전송" class="tbl_btn">
+        </div>
+    </div>
+
+</body>
+
+</html>
